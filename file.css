@@ -5,3 +5,7 @@ background: linear-gradient(to right, #74ebd5, #9face6);
     padding: 0;
     text-align: center;
 }
+img {
+    margin-top: 20px;
+    border-radius: 10px;
+}
