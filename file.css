@@ -35,3 +35,8 @@ input, select, textarea {
     border: 1px solid #ccc;
     font-size: 14px;
 }
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
