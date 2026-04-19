@@ -57,3 +57,6 @@ input[type="reset"] {
 input[type="submit"]:hover {
     background: #45a049;
 }
+input[type="reset"]:hover {
+    background: #d32f2f;
+}
