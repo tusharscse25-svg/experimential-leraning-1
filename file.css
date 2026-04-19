@@ -54,3 +54,6 @@ input[type="reset"] {
     cursor: pointer;
     font-weight: bold;
 }
+input[type="submit"]:hover {
+    background: #45a049;
+}
