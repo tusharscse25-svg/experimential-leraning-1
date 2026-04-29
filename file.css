@@ -69,3 +69,11 @@ nav button:hover {
     margin-top: 15px;
     text-align: center;
 }
+button.submit {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
