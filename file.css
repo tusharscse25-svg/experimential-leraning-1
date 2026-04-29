@@ -50,3 +50,8 @@ nav button:hover {
     border: 1px solid #ccc;
     padding: 8px;
 }
+.form-table input,
+.form-table textarea,
+.form-table select {
+    width: 100%;
+}
