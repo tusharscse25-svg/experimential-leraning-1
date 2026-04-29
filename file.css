@@ -87,3 +87,6 @@ button.reset {
 button.submit:hover {
     background: darkgreen;
 }
+button.reset:hover {
+    background: darkred;
+}
