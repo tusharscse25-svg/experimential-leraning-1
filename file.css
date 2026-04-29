@@ -23,3 +23,6 @@ nav button:hover {
     display: none;
     padding: 20px;
 }
+.active {
+    display: block;
+}
