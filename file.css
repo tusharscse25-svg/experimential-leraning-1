@@ -77,3 +77,10 @@ button.submit {
     margin-right: 10px;
     cursor: pointer;
 }
+button.reset {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
