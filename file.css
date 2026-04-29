@@ -84,3 +84,6 @@ button.reset {
     border: none;
     cursor: pointer;
 }
+button.submit:hover {
+    background: darkgreen;
+}
