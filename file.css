@@ -37,3 +37,7 @@ nav button:hover {
     padding: 20px;
     border-radius: 10px;
 }
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
