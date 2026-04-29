@@ -19,4 +19,7 @@ nav button {
 nav button:hover {
     text-decoration: underline;
 }
-
+.page {
+    display: none;
+    padding: 20px;
+}
