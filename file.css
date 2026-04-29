@@ -26,3 +26,7 @@ nav button:hover {
 .active {
     display: block;
 }
+.home-box {
+    text-align: center;
+    color: white;
+}
