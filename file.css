@@ -3,11 +3,13 @@ body {
     margin: 0;
     background: linear-gradient(to right, #74ebd5, #9face6);
 }
+
 nav {
     background: #333;
     padding: 10px;
     text-align: center;
 }
+
 nav button {
     color: white;
     background: none;
@@ -16,20 +18,25 @@ nav button {
     font-size: 16px;
     cursor: pointer;
 }
+
 nav button:hover {
     text-decoration: underline;
 }
+
 .page {
     display: none;
     padding: 20px;
 }
+
 .active {
     display: block;
 }
+
 .home-box {
     text-align: center;
     color: white;
 }
+
 .container {
     background: white;
     width: 450px;
@@ -37,24 +44,29 @@ nav button:hover {
     padding: 20px;
     border-radius: 10px;
 }
+
 .form-table {
     width: 100%;
     border-collapse: collapse;
 }
+
 .form-table th {
     background: #4CAF50;
     color: white;
     padding: 10px;
 }
+
 .form-table td {
     border: 1px solid #ccc;
     padding: 8px;
 }
+
 .form-table input,
 .form-table textarea,
 .form-table select {
     width: 100%;
 }
+
 .options label {
     display: inline-block;
     margin-right: 15px;
@@ -83,10 +95,70 @@ button.reset {
     color: white;
     border: none;
     cursor: pointer;
-}
+
 button.submit:hover {
     background: darkgreen;
 }
 button.reset:hover {
     background: darkred;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav button {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .form-table th,
+    .form-table td {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        background: linear-gradient(to bottom, #74ebd5, #9face6);
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav button {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .home-box {
+        font-size: 14px;
+    }
+
+    .form-table th,
+    .form-table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button.submit,
+    button.reset {
+        width: 100%;
+        margin: 5px 0;
+    }
 }
