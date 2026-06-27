@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,46 +10,34 @@
     <button onclick="showPage('home')">Home</button>
     <button onclick="showPage('form')">Feedback Form</button>
 </nav>
+
 <div id="home" class="page active">
     <div class="home-box">
         <h1>Student Feedback Portal</h1>
-
         <p>This website helps students to share their valuable feedback about courses.</p>
-
-        <p>
-            Feedback helps teachers understand student needs, improve teaching methods,
-            and create a better learning environment.
-        </p>
-
-        <p>
-            This system is simple, fast, and easy to use. Students can rate courses,
-            give suggestions, and share their experience.
-        </p>
+        <p>Feedback helps teachers understand student needs, improve teaching methods, and create a better learning environment.</p>
+        <p>This system is simple, fast, and easy to use. Students can rate courses, give suggestions, and share their experience.</p>
     </div>
 </div>
-  <div id="form" class="page">
+
+<div id="form" class="page">
     <div class="container">
         <h2>Student Feedback Form</h2>
-
         <form id="feedbackForm">
-
             <table class="form-table">
-
                 <tr><th colspan="2">👤 Personal Information</th></tr>
-
                 <tr>
                     <td>Full Name:</td>
-                    <td><input type="text" required></td>
+                    <td><input type="text" name="fullName" required></td>
                 </tr>
- <tr>
+                <tr>
                     <td>Email:</td>
-                    <td><input type="email" required></td>
+                    <td><input type="email" name="email" required></td>
                 </tr>
-
                 <tr>
                     <td>Branch:</td>
                     <td>
-                        <select class="select-box" required>
+                        <select class="select-box" name="branch" required>
                             <option value="">Select Branch</option>
                             <option>CSE</option>
                             <option>IT</option>
@@ -57,10 +46,10 @@
                         </select>
                     </td>
                 </tr>
-              <tr>
+                <tr>
                     <td>Year:</td>
                     <td>
-                        <select class="select-box" required>
+                        <select class="select-box" name="year" required>
                             <option value="">Select Year</option>
                             <option>1st Year</option>
                             <option>2nd Year</option>
@@ -69,11 +58,11 @@
                         </select>
                     </td>
                 </tr>
-         <tr><th colspan="2">📘 Course Details</th></tr>
-<tr>
+                <tr><th colspan="2">📘 Course Details</th></tr>
+                <tr>
                     <td>Course Name:</td>
                     <td>
-                        <select class="select-box" required>
+                        <select class="select-box" name="courseName" required>
                             <option value="">Select Course</option>
                             <option>Data Structures</option>
                             <option>Operating System</option>
@@ -83,10 +72,10 @@
                         </select>
                     </td>
                 </tr>
-            <tr>
+                <tr>
                     <td>Faculty Name:</td>
                     <td>
-                        <select class="select-box" required>
+                        <select class="select-box" name="facultyName" required>
                             <option value="">Select Faculty</option>
                             <option>Prof. Mayur Kadu</option>
                             <option>Prof. Suraj Mahajan</option>
@@ -95,73 +84,74 @@
                         </select>
                     </td>
                 </tr>  
-              <tr>
+                <tr>
                     <td>Rating (1-10):</td>
                     <td>
-                        <input type="range" id="rating" min="1" max="10" value="5">
+                        <input type="range" id="rating" name="rating" min="1" max="10" value="5">
                         <span id="ratingValue">5</span>
                     </td>
                 </tr>
-              <tr>
+                <tr>
                     <td>Difficulty:</td>
                     <td class="options">
-                        <label><input type="radio" name="difficulty" required> Easy</label>
-                        <label><input type="radio" name="difficulty"> Medium</label>
-                        <label><input type="radio" name="difficulty"> Hard</label>
+                        <label><input type="radio" name="difficulty" value="Easy" required> Easy</label>
+                        <label><input type="radio" name="difficulty" value="Medium"> Medium</label>
+                        <label><input type="radio" name="difficulty" value="Hard"> Hard</label>
                     </td>
                 </tr>
-<tr>
+                <tr>
                     <td>Teaching Quality:</td>
                     <td class="options">
-                        <label><input type="radio" name="teaching" required> Excellent</label>
-                        <label><input type="radio" name="teaching"> Good</label>
-                        <label><input type="radio" name="teaching"> Average</label>
-                        <label><input type="radio" name="teaching"> Poor</label>
+                        <label><input type="radio" name="teaching" value="Excellent" required> Excellent</label>
+                        <label><input type="radio" name="teaching" value="Good"> Good</label>
+                        <label><input type="radio" name="teaching" value="Average"> Average</label>
+                        <label><input type="radio" name="teaching" value="Poor"> Poor</label>
                     </td>
                 </tr>
-               <tr>
+                <tr>
                     <td>Content Quality:</td>
                     <td class="options">
-                        <label><input type="radio" name="content" required> Very Useful</label>
-                        <label><input type="radio" name="content"> Useful</label>
-                        <label><input type="radio" name="content"> Average</label>
-                        <label><input type="radio" name="content"> Not Useful</label>
+                        <label><input type="radio" name="content" value="Very Useful" required> Very Useful</label>
+                        <label><input type="radio" name="content" value="Useful"> Useful</label>
+                        <label><input type="radio" name="content" value="Average"> Average</label>
+                        <label><input type="radio" name="content" value="Not Useful"> Not Useful</label>
                     </td>
                 </tr>
-               <tr>
+                <tr>
                     <td>Recommend Course:</td>
                     <td class="options">
-                        <label><input type="radio" name="recommend" required> Yes</label>
-                        <label><input type="radio" name="recommend"> No</label>
+                        <label><input type="radio" name="recommend" value="Yes" required> Yes</label>
+                        <label><input type="radio" name="recommend" value="No"> No</label>
                     </td>
                 </tr>
-              <tr>
+                <tr>
                     <td>What you liked:</td>
-                    <td><textarea rows="2" required></textarea></td>
+                    <td><textarea rows="2" name="whatLiked" required></textarea></td>
                 </tr>
-              <tr>
+                <tr>
                     <td>Improvements:</td>
-                    <td><textarea rows="2" required></textarea></td>
+                    <td><textarea rows="2" name="improvements" required></textarea></td>
                 </tr>
-<tr>
+                <tr>
                     <td>Additional Comments:</td>
-                    <td><textarea rows="2" required></textarea></td>
+                    <td><textarea rows="2" name="comments" required></textarea></td>
                 </tr>
             </table>
-          <div class="btn-group">
+            <div class="btn-group">
                 <button type="submit" class="submit">Submit</button>
                 <button type="reset" class="reset">Reset</button>
             </div>
-
         </form>
     </div>
 </div>
-  <div id="thankyou" class="page">
+
+<div id="thankyou" class="page">
     <div class="home-box">
         <h1>Thank You!</h1>
         <p>Your feedback has been submitted successfully.</p>
     </div>
 </div>
-  <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
