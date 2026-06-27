@@ -34,7 +34,7 @@ document.getElementById("feedbackForm").addEventListener("submit", function(e){
             showPage("thankyou"); // Data submit hote hi Thank You page dikhao
             document.getElementById("feedbackForm").reset(); // Form khali karne ke liye
         } else {
-            alert("Oops! Kuch gadbad ho gayi. Kripya dobara try karein.");
+            alert("Oops! Something Went Wrong.");
         }
     })
     .catch(error => {
