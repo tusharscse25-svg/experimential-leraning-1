@@ -95,6 +95,7 @@ button.reset {
     color: white;
     border: none;
     cursor: pointer;
+} /* Bracket thik kar diya */
 
 button.submit:hover {
     background: darkgreen;
